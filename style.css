@@ -95,6 +95,38 @@ body {
   transition: margin-left .75s;
 }
 
+.slide-radio--1:checked ~ .drive > .item--1,
+.slide-radio--1:checked ~ .title-drive > .title--1 {
+  margin-left: 0%;
+}
+
+.slide-radio--2:checked ~ .drive > .item--1,
+.slide-radio--2:checked ~ .title-drive > .title--1 {
+  margin-left: -100%;
+}
+
+
+.slide-radio--3:checked ~ .drive > .item--1,
+.slide-radio--3:checked ~ .title-drive > .title--1 {
+  margin-left: -200%;
+}
+
+.slide-radio--4:checked ~ .drive > .item--1,
+.slide-radio--4:checked ~ .title-drive > .title--1 {
+  margin-left: -300%;
+}
+
+.slide-radio--4:checked ~ .drive > .item--1,
+.slide-radio--4:checked ~ .title-drive > .title--1 {
+  margin-left: -300%;
+}
+
+.slide-radio--5:checked ~ .drive > .item--1,
+.slide-radio--5:checked ~ .title-drive > .title--1 {
+  margin-left: -400%;
+}
+
+
 .title-drive {
   display: flex;
   overflow-x: hidden;
@@ -104,15 +136,4 @@ body {
 .title {
   flex: 0 0 100%;
   font-size: 1.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    justify-content: center;
-  }
-
-  .title-drive {
-    flex-basis: 100%;
-    order: -1;
-  }
 }
