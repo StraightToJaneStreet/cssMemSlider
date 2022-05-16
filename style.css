@@ -137,3 +137,14 @@ body {
   flex: 0 0 100%;
   font-size: 1.5em;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .title-drive {
+    flex-basis: 100%;
+    order: -1;
+  }
+}
