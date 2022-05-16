@@ -1,0 +1,94 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 20px 5% 20px 5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: right;
+}
+
+.slide-radio {
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+
+.slide-radio:checked + .slide-label > span {
+  background-color: darkred;
+}
+
+.slide-label {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 25px;
+  height: 35px;
+  margin-right: -27px;
+  margin-left: 10px;
+}
+
+.slide-label > span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 100%;
+}
+
+.slide-label:hover > span {
+  background-color: purple;
+}
+
+.slide-label:checked > span {
+  background-color: red;
+}
+
+.item {
+  flex: 0 0 100%;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.item--1 {
+  background-color: green;
+  transition: margin-left .75s;
+}
+
+.item--2 {
+  background-color: red;
+}
+
+.item--3 {
+  background-color: blue;
+}
+
+.item--4 {
+  background-color: orange;
+}
+
+.item--5 {
+  background-color: aqua;
+}
+
+.title--1 {
+  margin-left: 0%;
+  transition: margin-left .75s;
+}
+
+.title {
+  flex: 0 0 100%;
+  font-size: 1.5em;
+}
