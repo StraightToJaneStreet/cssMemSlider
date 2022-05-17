@@ -47,6 +47,7 @@ body {
   height: 1rem;
   background-color: gray;
   border-radius: 100%;
+  transition: background-color .5s, box-shadow .5s;
 }
 
 .slide-label:hover > span {
@@ -55,6 +56,11 @@ body {
 
 .slide-label:checked > span {
   background-color: red;
+}
+
+.slide-label:active > span {
+  background-color: green;
+  box-shadow: 0 0 .5rem rgba(0, 100, 0, .8);
 }
 
 .drive {
